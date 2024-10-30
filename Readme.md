@@ -1,0 +1,7 @@
+- [x] Instalação base (Vite + TypeScript)
+- [x] Plugins essenciais do VSCode + depurador
+- [x] Lint + Prettier
+- [x] Automatização com Husky + Lint Staged
+- [x] Router
+- [x] Implementação de Cookies
+- [x] Gerenciamento de estado do servidor com React Query + refetch button + loading and fetching
