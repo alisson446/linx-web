@@ -5,8 +5,8 @@ import svgr from "vite-plugin-svgr"
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    port: 3000,
-    host: "127.0.0.1"
+    port: process.env.NODE_ENV === 'production' ? 80 : 3000,
+    host: process.env.NODE_ENV === 'production' ? "host.docker.internal" : '127.0.0.1'
   },
   plugins: [svgr(), react()],
   build: {

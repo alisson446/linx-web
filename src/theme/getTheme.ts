@@ -8,14 +8,7 @@ const getTheme = (domain: string) => {
         hubSlug: "padrao",
       },
       images: {
-        favicon: "/images/linx/logolinx16x16.png",
-        logo: "/images/linx/logolinxg.png",
-        logoLogin: "/images/linx/logo_laranja.png",
-        iara: "/images/linx/avatar-iara.svg",
-        iaraWelcome: "/images/linx/iara-welcome-linx.png",
-        iaraPreuser: "/images/linx/iara-userpre-linx.png",
-        bgRegister: "/images/bg-register-linx.png",
-        iaraProduct: "/images/linx/iaraProductLinx.png",
+        favicon: "/images/linx/logolinx16x16.png"
       },
       colors: {
         sideBarButton: {

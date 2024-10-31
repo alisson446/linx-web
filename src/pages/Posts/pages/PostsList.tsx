@@ -52,7 +52,7 @@ const PostsList = () => {
             setModalRecordProduct(true);
           }}
         >
-          Cadastrar transação
+          Criar Postagem
         </Button>
       </SectionTop>
 
@@ -99,7 +99,7 @@ const PostsList = () => {
                               />
                             </ButtonIcon>
 
-                            <ButtonIcon tooltip="Excluir transação">
+                            <ButtonIcon tooltip="Excluir postagem">
                               <Button
                                 variant="unstyled"
                                 display="flex"
@@ -131,14 +131,14 @@ const PostsList = () => {
             )}
 
             {data.length === 0 && (
-              <AlertNoDataFound title="Nenhuma transação encontrada" />
+              <AlertNoDataFound title="Nenhuma postagem encontrada" />
             )}
           </>
         )}
       </Content>
 
       <SimpleModal
-        title="Transação"
+        title="Postagem"
         size="xl"
         isOpen={modalRecordPost}
         handleModal={setModalRecordProduct}
@@ -150,7 +150,7 @@ const PostsList = () => {
 
       {postData && (
         <SimpleModal
-          title="Transação"
+          title="Postagem"
           size="xl"
           isOpen={modalUpdatePost}
           handleModal={setModalUpdatePost}
@@ -164,8 +164,8 @@ const PostsList = () => {
 
       {modalRemovePost && (
         <AlertModal
-          title="Remover transação"
-          question="Deseja realmente remover esta transação?"
+          title="Remover postagem"
+          question="Deseja realmente remover esta postagem?"
           request={onConfirmRemovePost}
           showModal={modalRemovePost}
           setShowModal={setModalRemovePost}

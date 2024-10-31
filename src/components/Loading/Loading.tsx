@@ -1,4 +1,3 @@
-import { useTheme } from "@chakra-ui/react";
 import LoadingTextRandom from "../LoadingTextRandom";
 import { LoadingWrap } from "./styled";
 
@@ -7,7 +6,6 @@ interface ILoading {
 }
 
 const Loading = ({ productPage }: ILoading) => {
-  const theme = useTheme();
   const path = window.location.href.split("/")[3];
 
   return (
@@ -18,7 +16,6 @@ const Loading = ({ productPage }: ILoading) => {
       >
         <div className="loadingLoader" />
         <div className="loadingBox">
-          <img src={theme.images.logoLogin} alt={theme.content.project} />
           <p>Carregando...</p>
         </div>
       </LoadingWrap>

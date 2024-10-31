@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  linx-web:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - VITE_REACT_APP_LINX=http://127.0.0.1:8000

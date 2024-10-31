@@ -1,13 +1,10 @@
 import {
-  useTheme,
   Drawer,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   useDisclosure,
 } from "@chakra-ui/react";
-
-import { Link } from "react-router-dom";
 
 // Icons
 import { MdOutlineMenu } from "react-icons/md";
@@ -18,11 +15,8 @@ import MenuDropDown from "./components/MenuDropDown";
 // Styles
 import {
   MenuWithLogo,
-  Logo,
   MenuMainMobile,
   ButtonOpenMenuMobile,
-  LogoMobile,
-  DrawerHeaderMain,
   DrawerFooterMain,
 } from "./styled";
 
@@ -31,8 +25,6 @@ const Menu = ({
 }: {
   onBoardingCompleted?: boolean;
 }) => {
-  const theme = useTheme();
-
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -48,27 +40,12 @@ const Menu = ({
               <DrawerOverlay />
               <DrawerContent>
                 <DrawerCloseButton />
-                <DrawerHeaderMain>
-                  <Link to="/">
-                    <LogoMobile backgroundImage={theme.images.logo}>
-                      {theme.content.project}
-                    </LogoMobile>
-                  </Link>
-                </DrawerHeaderMain>
 
                 <DrawerFooterMain></DrawerFooterMain>
               </DrawerContent>
             </Drawer>
           </MenuMainMobile>
         )}
-
-        <Link
-          to="/"
-        >
-          <Logo backgroundImage={theme.images.logo}>
-            {theme.content.project}
-          </Logo>
-        </Link>
 
       </MenuWithLogo>
 

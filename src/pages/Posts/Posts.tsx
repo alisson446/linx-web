@@ -16,12 +16,12 @@ const Posts = () => {
   const menuBack =
     parseInt(window.location.href?.split("menu=")[1]?.split("?")[0]) || null;
   const [status, setStatus] = useState<IStatus>({
-    title: "Transações",
+    title: "Postagens",
     menu: menuBack || 1,
   });
 
   useEffect(() => {
-    document.title = `${theme.content.project} - Transações`;
+    document.title = `${theme.content.project} - Postagens`;
 
     const menuPath = parseInt(
       location.search?.split("menu=")[1]?.split("?")[0],
@@ -29,7 +29,7 @@ const Posts = () => {
 
     if (location?.search) {
       setStatus({
-        title: "Transações",
+        title: "Postagens",
         menu: menuPath,
       });
     }
