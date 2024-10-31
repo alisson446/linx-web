@@ -100,7 +100,7 @@ const GlobalProvider = ({ children }: IGlobalProvider) => {
       const loginResponse = await apiLinx.post<{
         userId: string
         token: string
-      }>("/users/auth", {
+      }>("/auth/login", {
         username,
         password,
       });
@@ -110,7 +110,7 @@ const GlobalProvider = ({ children }: IGlobalProvider) => {
         value: loginResponse.data.token
       });
 
-      const userResponse = await apiLinx.get<IUser>(`users/find/${loginResponse.data.userId}`);
+      const userResponse = await apiLinx.get<IUser>(`users/${loginResponse.data.userId}`);
 
       setUser(userResponse.data);
 

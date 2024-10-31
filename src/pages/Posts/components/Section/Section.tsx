@@ -1,12 +1,12 @@
 // Pages
-import TransacaoList from "../../pages/TransacoesList"
+import PostList from "../../pages/PostsList"
 
 // Interfaces
 import { ISection } from "../../../../models/sidebar.model"
 
 const Section = ({ menu }: ISection) => (
   <>
-    {menu === 1 && <TransacaoList />}
+    {menu === 1 && <PostList />}
   </>
 )
 

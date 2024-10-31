@@ -7,7 +7,7 @@ import { useGlobal } from "../contexts/UserContext";
 
 // Pages Auth
 import Home from "../pages/Home";
-import Transacoes from "../pages/Transacoes";
+import Posts from "../pages/Posts";
 
 // Pages No Auth
 import Login from "../pages/Login";
@@ -30,10 +30,9 @@ export const AppRoutes = () => {
     <Routes>
       {/* Rotas para todos os perfis autenticados */}
       <Route element={<ProtectedRoute isAuth={!!user} />}>
-        <Route path="/" element={homeElement} />
+        <Route path="/" element={<Posts />} />
         <Route path="/index.htm" element={homeElement} />
         <Route path="/index.html" element={homeElement} />
-        {/* <Route path="/transacoes" element={<Transacoes />} /> */}
 
         <Route path="*" element={<PageNotFound />} />
       </Route>

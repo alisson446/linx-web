@@ -1,11 +1,7 @@
 import { Box, Menu, MenuButton } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 
 // Icons
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
-
-// Utils
-import { permissionsText } from "../../../../utils/permissionsText";
 
 // Contexts
 import { useGlobal } from "../../../../contexts/UserContext";
@@ -60,9 +56,6 @@ const MenuDropDown = () => {
                 <Box onClick={() => signOut({ hasLoginRedirect: true })}>
                   Sair
                 </Box>
-              </MenuItem>
-              <MenuItem>
-                <Link to="/senha">Alterar Senha</Link>
               </MenuItem>
             </MenuList>
           </Box>

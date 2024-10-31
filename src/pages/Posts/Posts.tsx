@@ -11,7 +11,7 @@ import { theme } from "../../theme";
 import { useLocation } from "react-router-dom";
 import SideBar from "./components/Sidebar/SideBar";
 
-const Transacoes = () => {
+const Posts = () => {
   const location = useLocation();
   const menuBack =
     parseInt(window.location.href?.split("menu=")[1]?.split("?")[0]) || null;
@@ -45,4 +45,4 @@ const Transacoes = () => {
   );
 };
 
-export default Transacoes;
+export default Posts;
