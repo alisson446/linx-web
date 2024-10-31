@@ -14,7 +14,6 @@ import { FieldWrap, Form } from "./styled";
 
 // Funções de utilidade
 import { minContent } from "../../utils/messagesError";
-import RequestPasswordChange from "../../components/RequestPasswordChange/RequestPasswordChange";
 
 const handleSubmitRegisterSchema = z.object({
   username: z
@@ -31,7 +30,7 @@ type IhandleSubmitRegister = z.infer<typeof handleSubmitRegisterSchema>;
 
 const Login = () => {
   const theme = useTheme();
-  const { signIn, userAccess } = useGlobal();
+  const { signIn } = useGlobal();
   const [loading, setLoading] = useState(false);
 
   const {
@@ -61,13 +60,6 @@ const Login = () => {
 
   return (
     <Centralized>
-      {userAccess?.firstAccess && (
-        <RequestPasswordChange
-          isOpen={userAccess.firstAccess}
-          userEmail={userAccess?.userEmail as string}
-        />
-      )}
-
       <FieldWrap>
         <Form onSubmit={handleSubmit(handleSubmitRegister)}>
           <h3 className="title">Login</h3>
