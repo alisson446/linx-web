@@ -13,29 +13,15 @@ export const Scroll = chakra(Box, {
 
 export const Table = chakra(Box, {
   baseStyle: {
-    maxHeight: {
-      // base: "60vh",
-    },
     padding: {
       base: "15px",
     },
     overflow: {
       base: "auto",
     },
-    // flexGrow: {
-    //   base: 0,
-    //   lg: 1,
-    // },
-
-    // width: {
-    //   base: "100%",
-    //   "2xl": "100%",
-    // },
-    // minWidth: "840px",
     paddingTop: "10px",
     display: "flex",
     flexDirection: "column",
-    // overflowY: "hidden",
     gap: "15px",
   },
 });
@@ -56,19 +42,9 @@ export const THead = chakra(Box, {
 
 export const TBody = chakra(Box, {
   baseStyle: {
-    maxHeight: {
-      // lg: "60vh",
-    },
     padding: {
       lg: "0 15px",
     },
-    // overflow: {
-    //   lg: "auto",
-    // },
-    // flexGrow: {
-    //   base: 0,
-    //   lg: 1,
-    // },
 
     display: "flex",
     flexDirection: "column",

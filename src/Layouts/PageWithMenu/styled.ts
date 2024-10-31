@@ -23,7 +23,6 @@ export const Section = chakra(Box, {
 
     ".contentMain": {
       width: "100%",
-      // height: "100%",
       display: "flex",
       flexDirection: "column",
       gap: "15px",
@@ -33,9 +32,6 @@ export const Section = chakra(Box, {
         base: "4px",
         md: "4px 4px 0 0",
       },
-      // borderBottom: {
-      //   md: "none"
-      // }
     },
   },
 });

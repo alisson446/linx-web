@@ -45,8 +45,6 @@ const styles = {
         minWidth: "100px",
         backgroundColor: "#F5F5F5",
         color: "#505050",
-        // border: "1px solid",
-        // borderColor: "brand.500",
 
         "&:hover": {
           background: "#F9F9F9 !important",

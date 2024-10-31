@@ -33,7 +33,6 @@ export const MenuWithLogo = chakra(Box, {
     display: "flex",
     width: {
       base: "100%",
-      // xl: "unset"
     },
     margin: {
       base: "0 -66px 0 0",

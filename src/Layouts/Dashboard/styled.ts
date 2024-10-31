@@ -4,7 +4,6 @@ export const ComponentWrap = chakra(Box, {
   baseStyle: {
     width: "100%",
     height: "100%",
-    // minHeight: "calc(100% - 40px)",
     marginBottom: "40px",
     display: "flex",
     flexDirection: "column",
